@@ -65,6 +65,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx" />
+    <Content Include="3-2การใช้งานตัวแปรระดับ Block.aspx" />
+    <Content Include="3-3ลำดับเหตุการณ์ของคลาส Page.aspx" />
+    <Content Include="3-4ทำความรู้จักกับคุณสมบัติ IsPostBack ของคลาส Page.aspx" />
+    <Content Include="3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx" />
+    <Content Include="3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx" />
+    <Content Include="3-7การใช้งาน Cookies แบบมี Keys.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -79,6 +86,55 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx.cs">
+      <DependentUpon>3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx.designer.cs">
+      <DependentUpon>3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-2การใช้งานตัวแปรระดับ Block.aspx.cs">
+      <DependentUpon>3-2การใช้งานตัวแปรระดับ Block.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-2การใช้งานตัวแปรระดับ Block.aspx.designer.cs">
+      <DependentUpon>3-2การใช้งานตัวแปรระดับ Block.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-3ลำดับเหตุการณ์ของคลาส Page.aspx.cs">
+      <DependentUpon>3-3ลำดับเหตุการณ์ของคลาส Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-3ลำดับเหตุการณ์ของคลาส Page.aspx.designer.cs">
+      <DependentUpon>3-3ลำดับเหตุการณ์ของคลาส Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-4ทำความรู้จักกับคุณสมบัติ IsPostBack ของคลาส Page.aspx.cs">
+      <DependentUpon>3-4ทำความรู้จักกับคุณสมบัติ IsPostBack ของคลาส Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-4ทำความรู้จักกับคุณสมบัติ IsPostBack ของคลาส Page.aspx.designer.cs">
+      <DependentUpon>3-4ทำความรู้จักกับคุณสมบัติ IsPostBack ของคลาส Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx.cs">
+      <DependentUpon>3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx.designer.cs">
+      <DependentUpon>3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx.cs">
+      <DependentUpon>3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx.designer.cs">
+      <DependentUpon>3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-7การใช้งาน Cookies แบบมี Keys.aspx.cs">
+      <DependentUpon>3-7การใช้งาน Cookies แบบมี Keys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-7การใช้งาน Cookies แบบมี Keys.aspx.designer.cs">
+      <DependentUpon>3-7การใช้งาน Cookies แบบมี Keys.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
