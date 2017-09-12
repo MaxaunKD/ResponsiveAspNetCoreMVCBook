@@ -1,0 +1,21 @@
+﻿.body 
+{
+    font-family: Consolas;
+    font-size:14pt;
+    color:Blue;
+}
+.lbl 
+{
+    font-family: Consolas;
+    font-size:10pt;
+    font-weight: bold;
+    background-color:Orange;
+}
+.txt
+{
+    font-family: Consolas;
+    font-size:10pt;
+    font-weight: bold;
+    color:Yellow;
+    background-color:Green;
+}

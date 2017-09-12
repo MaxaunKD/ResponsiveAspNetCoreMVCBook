@@ -72,7 +72,44 @@
     <Content Include="3-5การกำหนดให้เว็บคอนโทรลมีการส่งค่ากลับ.aspx" />
     <Content Include="3-6พื้นฐานการเก็บข้อมูลในเครื่องผู้ใช้งานด้วยคลาส Cookies.aspx" />
     <Content Include="3-7การใช้งาน Cookies แบบมี Keys.aspx" />
+    <Content Include="3-8การทำคำทักทายผู้เข้าเยี่ยมชมเว็บเพจ.aspx" />
+    <Content Include="3-9พื้นฐานการฝช้งานตัวแปรแบบ Session.aspx" />
+    <Content Include="4-13การ Set Focus ให้กับอิลิเมนต์ %28SetFocus.html%29.aspx" />
+    <Content Include="4-14การตรวจสอบรายการที่ถูกเลือกในอิลิเมนต์ select %28WorkingWithSelect.html%29.aspx" />
+    <Content Include="4-15การควบคุมอิลิเมนต์ div %28ControlDIV.html%29.aspx" />
+    <Content Include="4-16การใช้งานฟังก์ชัน setTimeout%28%29 %28SetTimeout.html%29.aspx" />
+    <Content Include="4-1วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptEmbedding.html%29.aspx" />
+    <Content Include="4-2วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptIncluding.html%29.aspx" />
+    <Content Include="4-3วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptInline.html%29.aspx" />
+    <Content Include="4-4การประกาศตัวแปร.aspx" />
+    <Content Include="4-5การสร้างฟังก์ชั้นชึ้นมาใช้งานใน JavaScript %28CreateFunction1.html%29.aspx" />
+    <Content Include="4-6การอ้างอิงอิลิเมนต์ของ HTML ใน JavaScript %28WorkingWithHTMLElement.html%29.aspx" />
+    <Content Include="4-7การกำหนดค่าในตารางของภาษา HTML %28WorkingWithTable.html%29.aspx" />
+    <Content Include="4-7การส่งต่อข้อมูลไปยังอิลิเมนต์อื่น %28UsingInput.html%29.aspx" />
+    <Content Include="4-8พื้นฐานการปรับแต่งเอตทริบิวต์ของอิลิเมนต์ HTML %28JSWithDOM.html%29.aspx" />
+    <Content Include="4-9การตรวจสอบอิลิเทรต์ input ชนิด checkbox %28checkCheckBox.html%29.aspx" />
+    <Content Include="5-1กำหนดให้ใช้กับอิลิเมนต์ใดอิลิเมนต์หนึ่ง %28index.html%29.aspx" />
+    <Content Include="5-2ฝังสคริปต์ภาษา CSS3 ลงในไฟล์ HTML5 %28index.html%29.aspx" />
+    <Content Include="5-3สร้างไฟล์ css แยกออกมาเป็นไฟล์ต่างหาก %28index.html%29.aspx" />
+    <Content Include="5-4พื้นฐานการตกแต่งเว็บคอนโทรลด้วย CSS3 %28Default.aspx%29.aspx" />
+    <Content Include="6-1ทำความรู้จักกับตัวบรรจุ container และ container-fluid.aspx" />
+    <Content Include="6-2ทำความรู้จักกับระบบ Grid ของ Bootstrap.aspx" />
+    <Content Include="6-3ทำความรู้จักกับขนาดของ Grid.aspx" />
+    <Content Include="6-4การตกแต่งให้กับเว็บคอลโทรล Button.aspx" />
+    <Content Include="7-1Received-Get.aspx" />
+    <Content Include="7-1Default-Get.aspx" />
+    <Content Include="7-2Default-POST.aspx" />
+    <Content Include="7-2Recived-POST.aspx" />
+    <Content Include="8-1-2Default.aspx" />
+    <Content Include="8-1-2Products.aspx" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.2.1.min.js" />
+    <Content Include="css\5-4CSS.css" />
     <Content Include="packages.config" />
+    <Content Include="8-1-2Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,6 +120,8 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\HelloJavaScriptWorld.js" />
+    <Content Include="css\5-3CSS.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +173,223 @@
     </Compile>
     <Compile Include="3-7การใช้งาน Cookies แบบมี Keys.aspx.designer.cs">
       <DependentUpon>3-7การใช้งาน Cookies แบบมี Keys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-8การทำคำทักทายผู้เข้าเยี่ยมชมเว็บเพจ.aspx.cs">
+      <DependentUpon>3-8การทำคำทักทายผู้เข้าเยี่ยมชมเว็บเพจ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-8การทำคำทักทายผู้เข้าเยี่ยมชมเว็บเพจ.aspx.designer.cs">
+      <DependentUpon>3-8การทำคำทักทายผู้เข้าเยี่ยมชมเว็บเพจ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-9พื้นฐานการฝช้งานตัวแปรแบบ Session.aspx.cs">
+      <DependentUpon>3-9พื้นฐานการฝช้งานตัวแปรแบบ Session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-9พื้นฐานการฝช้งานตัวแปรแบบ Session.aspx.designer.cs">
+      <DependentUpon>3-9พื้นฐานการฝช้งานตัวแปรแบบ Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-13การ Set Focus ให้กับอิลิเมนต์ %28SetFocus.html%29.aspx.cs">
+      <DependentUpon>4-13การ Set Focus ให้กับอิลิเมนต์ %28SetFocus.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-13การ Set Focus ให้กับอิลิเมนต์ %28SetFocus.html%29.aspx.designer.cs">
+      <DependentUpon>4-13การ Set Focus ให้กับอิลิเมนต์ %28SetFocus.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-14การตรวจสอบรายการที่ถูกเลือกในอิลิเมนต์ select %28WorkingWithSelect.html%29.aspx.cs">
+      <DependentUpon>4-14การตรวจสอบรายการที่ถูกเลือกในอิลิเมนต์ select %28WorkingWithSelect.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-14การตรวจสอบรายการที่ถูกเลือกในอิลิเมนต์ select %28WorkingWithSelect.html%29.aspx.designer.cs">
+      <DependentUpon>4-14การตรวจสอบรายการที่ถูกเลือกในอิลิเมนต์ select %28WorkingWithSelect.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-15การควบคุมอิลิเมนต์ div %28ControlDIV.html%29.aspx.cs">
+      <DependentUpon>4-15การควบคุมอิลิเมนต์ div %28ControlDIV.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-15การควบคุมอิลิเมนต์ div %28ControlDIV.html%29.aspx.designer.cs">
+      <DependentUpon>4-15การควบคุมอิลิเมนต์ div %28ControlDIV.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-16การใช้งานฟังก์ชัน setTimeout%28%29 %28SetTimeout.html%29.aspx.cs">
+      <DependentUpon>4-16การใช้งานฟังก์ชัน setTimeout%28%29 %28SetTimeout.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-16การใช้งานฟังก์ชัน setTimeout%28%29 %28SetTimeout.html%29.aspx.designer.cs">
+      <DependentUpon>4-16การใช้งานฟังก์ชัน setTimeout%28%29 %28SetTimeout.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-1วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptEmbedding.html%29.aspx.cs">
+      <DependentUpon>4-1วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptEmbedding.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-1วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptEmbedding.html%29.aspx.designer.cs">
+      <DependentUpon>4-1วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptEmbedding.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-2วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptIncluding.html%29.aspx.cs">
+      <DependentUpon>4-2วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptIncluding.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-2วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptIncluding.html%29.aspx.designer.cs">
+      <DependentUpon>4-2วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptIncluding.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-3วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptInline.html%29.aspx.cs">
+      <DependentUpon>4-3วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptInline.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-3วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptInline.html%29.aspx.designer.cs">
+      <DependentUpon>4-3วิธีการใช้งานภาษา JavaScript ในหน้าเว็บเพจ %28JavaScriptInline.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-4การประกาศตัวแปร.aspx.cs">
+      <DependentUpon>4-4การประกาศตัวแปร.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-4การประกาศตัวแปร.aspx.designer.cs">
+      <DependentUpon>4-4การประกาศตัวแปร.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-5การสร้างฟังก์ชั้นชึ้นมาใช้งานใน JavaScript %28CreateFunction1.html%29.aspx.cs">
+      <DependentUpon>4-5การสร้างฟังก์ชั้นชึ้นมาใช้งานใน JavaScript %28CreateFunction1.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-5การสร้างฟังก์ชั้นชึ้นมาใช้งานใน JavaScript %28CreateFunction1.html%29.aspx.designer.cs">
+      <DependentUpon>4-5การสร้างฟังก์ชั้นชึ้นมาใช้งานใน JavaScript %28CreateFunction1.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-6การอ้างอิงอิลิเมนต์ของ HTML ใน JavaScript %28WorkingWithHTMLElement.html%29.aspx.cs">
+      <DependentUpon>4-6การอ้างอิงอิลิเมนต์ของ HTML ใน JavaScript %28WorkingWithHTMLElement.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-6การอ้างอิงอิลิเมนต์ของ HTML ใน JavaScript %28WorkingWithHTMLElement.html%29.aspx.designer.cs">
+      <DependentUpon>4-6การอ้างอิงอิลิเมนต์ของ HTML ใน JavaScript %28WorkingWithHTMLElement.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-7การกำหนดค่าในตารางของภาษา HTML %28WorkingWithTable.html%29.aspx.cs">
+      <DependentUpon>4-7การกำหนดค่าในตารางของภาษา HTML %28WorkingWithTable.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-7การกำหนดค่าในตารางของภาษา HTML %28WorkingWithTable.html%29.aspx.designer.cs">
+      <DependentUpon>4-7การกำหนดค่าในตารางของภาษา HTML %28WorkingWithTable.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-7การส่งต่อข้อมูลไปยังอิลิเมนต์อื่น %28UsingInput.html%29.aspx.cs">
+      <DependentUpon>4-7การส่งต่อข้อมูลไปยังอิลิเมนต์อื่น %28UsingInput.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-7การส่งต่อข้อมูลไปยังอิลิเมนต์อื่น %28UsingInput.html%29.aspx.designer.cs">
+      <DependentUpon>4-7การส่งต่อข้อมูลไปยังอิลิเมนต์อื่น %28UsingInput.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-8พื้นฐานการปรับแต่งเอตทริบิวต์ของอิลิเมนต์ HTML %28JSWithDOM.html%29.aspx.cs">
+      <DependentUpon>4-8พื้นฐานการปรับแต่งเอตทริบิวต์ของอิลิเมนต์ HTML %28JSWithDOM.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-8พื้นฐานการปรับแต่งเอตทริบิวต์ของอิลิเมนต์ HTML %28JSWithDOM.html%29.aspx.designer.cs">
+      <DependentUpon>4-8พื้นฐานการปรับแต่งเอตทริบิวต์ของอิลิเมนต์ HTML %28JSWithDOM.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-9การตรวจสอบอิลิเทรต์ input ชนิด checkbox %28checkCheckBox.html%29.aspx.cs">
+      <DependentUpon>4-9การตรวจสอบอิลิเทรต์ input ชนิด checkbox %28checkCheckBox.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-9การตรวจสอบอิลิเทรต์ input ชนิด checkbox %28checkCheckBox.html%29.aspx.designer.cs">
+      <DependentUpon>4-9การตรวจสอบอิลิเทรต์ input ชนิด checkbox %28checkCheckBox.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5-1กำหนดให้ใช้กับอิลิเมนต์ใดอิลิเมนต์หนึ่ง %28index.html%29.aspx.cs">
+      <DependentUpon>5-1กำหนดให้ใช้กับอิลิเมนต์ใดอิลิเมนต์หนึ่ง %28index.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5-1กำหนดให้ใช้กับอิลิเมนต์ใดอิลิเมนต์หนึ่ง %28index.html%29.aspx.designer.cs">
+      <DependentUpon>5-1กำหนดให้ใช้กับอิลิเมนต์ใดอิลิเมนต์หนึ่ง %28index.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5-2ฝังสคริปต์ภาษา CSS3 ลงในไฟล์ HTML5 %28index.html%29.aspx.cs">
+      <DependentUpon>5-2ฝังสคริปต์ภาษา CSS3 ลงในไฟล์ HTML5 %28index.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5-2ฝังสคริปต์ภาษา CSS3 ลงในไฟล์ HTML5 %28index.html%29.aspx.designer.cs">
+      <DependentUpon>5-2ฝังสคริปต์ภาษา CSS3 ลงในไฟล์ HTML5 %28index.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5-3สร้างไฟล์ css แยกออกมาเป็นไฟล์ต่างหาก %28index.html%29.aspx.cs">
+      <DependentUpon>5-3สร้างไฟล์ css แยกออกมาเป็นไฟล์ต่างหาก %28index.html%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5-3สร้างไฟล์ css แยกออกมาเป็นไฟล์ต่างหาก %28index.html%29.aspx.designer.cs">
+      <DependentUpon>5-3สร้างไฟล์ css แยกออกมาเป็นไฟล์ต่างหาก %28index.html%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5-4พื้นฐานการตกแต่งเว็บคอนโทรลด้วย CSS3 %28Default.aspx%29.aspx.cs">
+      <DependentUpon>5-4พื้นฐานการตกแต่งเว็บคอนโทรลด้วย CSS3 %28Default.aspx%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5-4พื้นฐานการตกแต่งเว็บคอนโทรลด้วย CSS3 %28Default.aspx%29.aspx.designer.cs">
+      <DependentUpon>5-4พื้นฐานการตกแต่งเว็บคอนโทรลด้วย CSS3 %28Default.aspx%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6-1ทำความรู้จักกับตัวบรรจุ container และ container-fluid.aspx.cs">
+      <DependentUpon>6-1ทำความรู้จักกับตัวบรรจุ container และ container-fluid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6-1ทำความรู้จักกับตัวบรรจุ container และ container-fluid.aspx.designer.cs">
+      <DependentUpon>6-1ทำความรู้จักกับตัวบรรจุ container และ container-fluid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6-2ทำความรู้จักกับระบบ Grid ของ Bootstrap.aspx.cs">
+      <DependentUpon>6-2ทำความรู้จักกับระบบ Grid ของ Bootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6-2ทำความรู้จักกับระบบ Grid ของ Bootstrap.aspx.designer.cs">
+      <DependentUpon>6-2ทำความรู้จักกับระบบ Grid ของ Bootstrap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6-3ทำความรู้จักกับขนาดของ Grid.aspx.cs">
+      <DependentUpon>6-3ทำความรู้จักกับขนาดของ Grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6-3ทำความรู้จักกับขนาดของ Grid.aspx.designer.cs">
+      <DependentUpon>6-3ทำความรู้จักกับขนาดของ Grid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6-4การตกแต่งให้กับเว็บคอลโทรล Button.aspx.cs">
+      <DependentUpon>6-4การตกแต่งให้กับเว็บคอลโทรล Button.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6-4การตกแต่งให้กับเว็บคอลโทรล Button.aspx.designer.cs">
+      <DependentUpon>6-4การตกแต่งให้กับเว็บคอลโทรล Button.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7-1Received-Get.aspx.cs">
+      <DependentUpon>7-1Received-Get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7-1Received-Get.aspx.designer.cs">
+      <DependentUpon>7-1Received-Get.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7-1Default-Get.aspx.cs">
+      <DependentUpon>7-1Default-Get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7-1Default-Get.aspx.designer.cs">
+      <DependentUpon>7-1Default-Get.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7-2Default-POST.aspx.cs">
+      <DependentUpon>7-2Default-POST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7-2Default-POST.aspx.designer.cs">
+      <DependentUpon>7-2Default-POST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7-2Recived-POST.aspx.cs">
+      <DependentUpon>7-2Recived-POST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7-2Recived-POST.aspx.designer.cs">
+      <DependentUpon>7-2Recived-POST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="8-1-2Default.aspx.cs">
+      <DependentUpon>8-1-2Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8-1-2Default.aspx.designer.cs">
+      <DependentUpon>8-1-2Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="8-1-2Products.aspx.cs">
+      <DependentUpon>8-1-2Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8-1-2Products.aspx.designer.cs">
+      <DependentUpon>8-1-2Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="8-1-2Site1.Master.cs">
+      <DependentUpon>8-1-2Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8-1-2Site1.Master.designer.cs">
+      <DependentUpon>8-1-2Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
