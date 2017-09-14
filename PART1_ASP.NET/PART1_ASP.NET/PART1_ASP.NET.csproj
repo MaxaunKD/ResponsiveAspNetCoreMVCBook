@@ -43,10 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,6 +73,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="10-1พื้นฐานการแสดงข้อมูลแบบตารางด้วยเว็บคอนโทรล.aspx" />
+    <Content Include="10-2การแสดงหรือซ่อนคอลัมน์ตามขนาดหน้าจอ.aspx" />
+    <Content Include="10-3เชียนโค้ดใช้งาน Entity Framework แบบกำหนดคอลัมน์เอง.aspx" />
+    <Content Include="10-5พื้นฐานการแสดงข้อมูลแบบรายการด้วยเว็บคอนโทรล.aspx" />
+    <Content Include="10-4การแสดงข้อมูลจาก 2 ตารางขึ้นไปด้วย Entitiy Framework.aspx" />
+    <Content Include="11-1SearchCustomers.aspx" />
+    <Content Include="11-1SearchCustomers_jQuery.aspx" />
+    <Content Include="11-2การเพิ่มข้อมูลในฐานข้อมูลโดยอาศัย Entity Framework.aspx" />
+    <Content Include="11-3การแก้ไขข้อมูล.aspx" />
     <Content Include="3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx" />
     <Content Include="3-2การใช้งานตัวแปรระดับ Block.aspx" />
     <Content Include="3-3ลำดับเหตุการณ์ของคลาส Page.aspx" />
@@ -108,8 +125,93 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.2.1.min.js" />
     <Content Include="css\5-4CSS.css" />
+    <Content Include="edmNorthWind.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_10-4.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_10-4.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_10-4.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_10-4.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_10-4.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_10-4.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_10-5.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_10-5.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_10-5.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_10-5.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_10-5.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_10-5.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_11-1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_11-1.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_11-1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_11-1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_11-1.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_11-1.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_11-3.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_11-3.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_11-3.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="edmNorthWind_11-3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmNorthWind_11-3.edmx</DependentUpon>
+      <LastGenOutput>edmNorthWind_11-3.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="8-1-2Site1.Master" />
+    <EntityDeploy Include="edmNorthWind.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmNorthWind.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="edmNorthWind.edmx.diagram">
+      <DependentUpon>edmNorthWind.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="edmNorthWind_10-5.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmNorthWind_10-5.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="edmNorthWind_10-5.edmx.diagram">
+      <DependentUpon>edmNorthWind_10-5.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="edmNorthWind_11-1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmNorthWind_11-1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="edmNorthWind_11-1.edmx.diagram">
+      <DependentUpon>edmNorthWind_11-1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="edmNorthWind_10-4.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmNorthWind_10-4.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="edmNorthWind_10-4.edmx.diagram">
+      <DependentUpon>edmNorthWind_10-4.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="edmNorthWind_11-3.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmNorthWind_11-3.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="edmNorthWind_11-3.edmx.diagram">
+      <DependentUpon>edmNorthWind_11-3.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,6 +227,69 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10-1พื้นฐานการแสดงข้อมูลแบบตารางด้วยเว็บคอนโทรล.aspx.cs">
+      <DependentUpon>10-1พื้นฐานการแสดงข้อมูลแบบตารางด้วยเว็บคอนโทรล.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-1พื้นฐานการแสดงข้อมูลแบบตารางด้วยเว็บคอนโทรล.aspx.designer.cs">
+      <DependentUpon>10-1พื้นฐานการแสดงข้อมูลแบบตารางด้วยเว็บคอนโทรล.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10-2การแสดงหรือซ่อนคอลัมน์ตามขนาดหน้าจอ.aspx.cs">
+      <DependentUpon>10-2การแสดงหรือซ่อนคอลัมน์ตามขนาดหน้าจอ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-2การแสดงหรือซ่อนคอลัมน์ตามขนาดหน้าจอ.aspx.designer.cs">
+      <DependentUpon>10-2การแสดงหรือซ่อนคอลัมน์ตามขนาดหน้าจอ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10-3เชียนโค้ดใช้งาน Entity Framework แบบกำหนดคอลัมน์เอง.aspx.cs">
+      <DependentUpon>10-3เชียนโค้ดใช้งาน Entity Framework แบบกำหนดคอลัมน์เอง.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-3เชียนโค้ดใช้งาน Entity Framework แบบกำหนดคอลัมน์เอง.aspx.designer.cs">
+      <DependentUpon>10-3เชียนโค้ดใช้งาน Entity Framework แบบกำหนดคอลัมน์เอง.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10-5พื้นฐานการแสดงข้อมูลแบบรายการด้วยเว็บคอนโทรล.aspx.cs">
+      <DependentUpon>10-5พื้นฐานการแสดงข้อมูลแบบรายการด้วยเว็บคอนโทรล.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-5พื้นฐานการแสดงข้อมูลแบบรายการด้วยเว็บคอนโทรล.aspx.designer.cs">
+      <DependentUpon>10-5พื้นฐานการแสดงข้อมูลแบบรายการด้วยเว็บคอนโทรล.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10-4การแสดงข้อมูลจาก 2 ตารางขึ้นไปด้วย Entitiy Framework.aspx.cs">
+      <DependentUpon>10-4การแสดงข้อมูลจาก 2 ตารางขึ้นไปด้วย Entitiy Framework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-4การแสดงข้อมูลจาก 2 ตารางขึ้นไปด้วย Entitiy Framework.aspx.designer.cs">
+      <DependentUpon>10-4การแสดงข้อมูลจาก 2 ตารางขึ้นไปด้วย Entitiy Framework.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11-1SearchCustomers.aspx.cs">
+      <DependentUpon>11-1SearchCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11-1SearchCustomers.aspx.designer.cs">
+      <DependentUpon>11-1SearchCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11-1SearchCustomers_jQuery.aspx.cs">
+      <DependentUpon>11-1SearchCustomers_jQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11-1SearchCustomers_jQuery.aspx.designer.cs">
+      <DependentUpon>11-1SearchCustomers_jQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11-2การเพิ่มข้อมูลในฐานข้อมูลโดยอาศัย Entity Framework.aspx.cs">
+      <DependentUpon>11-2การเพิ่มข้อมูลในฐานข้อมูลโดยอาศัย Entity Framework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11-2การเพิ่มข้อมูลในฐานข้อมูลโดยอาศัย Entity Framework.aspx.designer.cs">
+      <DependentUpon>11-2การเพิ่มข้อมูลในฐานข้อมูลโดยอาศัย Entity Framework.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11-3การแก้ไขข้อมูล.aspx.cs">
+      <DependentUpon>11-3การแก้ไขข้อมูล.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11-3การแก้ไขข้อมูล.aspx.designer.cs">
+      <DependentUpon>11-3การแก้ไขข้อมูล.aspx</DependentUpon>
+    </Compile>
     <Compile Include="3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx.cs">
       <DependentUpon>3-1การใช้งานตัวแปรระดับ Local และ Web Form .aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -391,6 +556,12 @@
     <Compile Include="8-1-2Site1.Master.designer.cs">
       <DependentUpon>8-1-2Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>edmNorthWind_10-4.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>edmNorthWind_11-1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,14 +569,95 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="edmNorthWind.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-4.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-4.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-4.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-4.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-5.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-5.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-5.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_10-5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_10-5.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-3.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-3.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmNorthWind_11-3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmNorthWind_11-3.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>edmNorthWind_11-3.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

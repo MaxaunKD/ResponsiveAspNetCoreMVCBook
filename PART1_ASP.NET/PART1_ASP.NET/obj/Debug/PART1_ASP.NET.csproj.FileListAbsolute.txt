@@ -32,3 +32,7 @@ E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.
 E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\obj\Debug\PART1_ASP.NET.csprojResolveAssemblyReference.cache
 E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\obj\Debug\PART1_ASP.NET.dll
 E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\obj\Debug\PART1_ASP.NET.pdb
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\bin\EntityFramework.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\bin\EntityFramework.SqlServer.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\bin\EntityFramework.xml
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART1_ASP.NET\PART1_ASP.NET\bin\EntityFramework.SqlServer.xml
