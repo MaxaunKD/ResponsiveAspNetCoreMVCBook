@@ -1,0 +1,9 @@
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\bin\Debug\netcoreapp1.1\BasicModel.deps.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\bin\Debug\netcoreapp1.1\BasicModel.runtimeconfig.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\bin\Debug\netcoreapp1.1\BasicModel.runtimeconfig.dev.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\bin\Debug\netcoreapp1.1\BasicModel.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\bin\Debug\netcoreapp1.1\BasicModel.pdb
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\obj\Debug\netcoreapp1.1\BasicModel.csprojResolveAssemblyReference.cache
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\obj\Debug\netcoreapp1.1\BasicModel.AssemblyInfo.cs
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\obj\Debug\netcoreapp1.1\BasicModel.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicModel\BasicModel\obj\Debug\netcoreapp1.1\BasicModel.pdb

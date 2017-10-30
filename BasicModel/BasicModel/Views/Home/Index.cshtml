@@ -1,0 +1,33 @@
+﻿@*@model BasicModel.Models.Book*@
+@model IEnumerable<BasicModel.Models.Book>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<h1>ข้อมูลหนังสือ</h1>
+รหัส ISBN : @Model.ISBN <br />
+ชื่อหนังสือ : @Model.Title <br />
+ราคา : @Model.Price*@
+
+<h1>รายการหนังสือ</h1>
+<div>
+    <table class="table">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:10%">ISBN</td>
+            <td style="width:60%">ชื่อหนังสือ</td>
+            <td style="width:10%">ราคา</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><img src="@Url.Content(@item.PicUrl)" alt="รูปหนังสือ" style="width:80px;height:100px" /></td>
+                @*<td>@item.ISBN</td>*@
+                <td>@Html.ActionLink(@item.ISBN.ToString(), "Details", new { Id = @item.ISBN})</td>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </table>
+</div>

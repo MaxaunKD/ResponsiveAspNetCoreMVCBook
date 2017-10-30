@@ -1,0 +1,11 @@
+﻿@model BasicServiceAndDI.Models.Products
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>ข้อมูลสินค้า</h2>
+<p>
+    รหัสสินค้า : @Model.ProductID <br/>
+    ชื่อสินค้า : @Model.ProductName<br/>
+    ราคา : @Model.ProductPrice
+</p>

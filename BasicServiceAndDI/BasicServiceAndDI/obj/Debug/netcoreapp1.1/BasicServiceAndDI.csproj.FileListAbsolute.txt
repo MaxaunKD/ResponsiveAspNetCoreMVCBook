@@ -1,0 +1,9 @@
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\bin\Debug\netcoreapp1.1\BasicServiceAndDI.deps.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\bin\Debug\netcoreapp1.1\BasicServiceAndDI.runtimeconfig.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\bin\Debug\netcoreapp1.1\BasicServiceAndDI.runtimeconfig.dev.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\bin\Debug\netcoreapp1.1\BasicServiceAndDI.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\bin\Debug\netcoreapp1.1\BasicServiceAndDI.pdb
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\obj\Debug\netcoreapp1.1\BasicServiceAndDI.csprojResolveAssemblyReference.cache
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\obj\Debug\netcoreapp1.1\BasicServiceAndDI.AssemblyInfo.cs
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\obj\Debug\netcoreapp1.1\BasicServiceAndDI.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\BasicServiceAndDI\BasicServiceAndDI\obj\Debug\netcoreapp1.1\BasicServiceAndDI.pdb

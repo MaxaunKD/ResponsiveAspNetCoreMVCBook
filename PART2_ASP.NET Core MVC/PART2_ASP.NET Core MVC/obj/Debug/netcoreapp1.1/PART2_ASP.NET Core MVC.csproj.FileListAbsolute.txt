@@ -1,0 +1,9 @@
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\bin\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.deps.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\bin\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.runtimeconfig.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\bin\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.runtimeconfig.dev.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\bin\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\bin\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.pdb
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\obj\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.csprojResolveAssemblyReference.cache
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\obj\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.AssemblyInfo.cs
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\obj\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\PART2_ASP.NET Core MVC\PART2_ASP.NET Core MVC\obj\Debug\netcoreapp1.1\PART2_ASP.NET Core MVC.pdb

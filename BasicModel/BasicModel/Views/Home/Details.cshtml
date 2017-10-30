@@ -1,0 +1,20 @@
+﻿@model BasicModel.Models.Book
+@{
+}
+
+<br /><h2>@Model.Title</h2>
+<div class="card">
+    <div class="card-header" style="background-color:blue;color:white;">
+        ISBN : @Model.ISBN @Model.Title
+    </div>
+    <div class="card-block">
+        <img src="@Url.Content(@Model.PicUrl)" alt="รูปปกหนังสือ" style="width:120px;height:150px" />
+        <p class="card-text">@Model.Description</p>
+    </div>
+    <div class="card-footer" style="color:orangered;">
+        ราคา : @Model.Price
+    </div>
+</div>
+<p>
+    @Html.ActionLink("หน้าแรก", "Index", "Home")
+</p>
