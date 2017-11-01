@@ -1,0 +1,32 @@
+﻿@model IEnumerable<DatabaseFirst.Models.Products>
+@{
+    ViewBag.Title = "ข้อมูลสินค้า";
+}
+
+<h3>ข้อมูลสินค้าจากตาราง Products</h3>
+<p>
+    @using (Html.BeginForm("SearchProducts", "Products", FormMethod.Get))
+    { 
+        <div>
+            @Html.TextBox("txtFilter") <input type="submit" value="ค้นหา" />
+        </div>
+    }
+</p>
+
+<table class="table">
+    <tr>
+        <th>รหัสสินค้า</th>
+        <th>ชื่อสินค้า</th>
+        <th>ราคาสินค้า</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.UnitPrice</td>
+        </tr>
+
+        }
+</table>

@@ -1,0 +1,9 @@
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\bin\Debug\netcoreapp1.1\DatabaseFirst17CRUD.deps.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\bin\Debug\netcoreapp1.1\DatabaseFirst17CRUD.runtimeconfig.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\bin\Debug\netcoreapp1.1\DatabaseFirst17CRUD.runtimeconfig.dev.json
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\bin\Debug\netcoreapp1.1\DatabaseFirst17CRUD.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\obj\Debug\netcoreapp1.1\DatabaseFirst17CRUD.csprojResolveAssemblyReference.cache
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\obj\Debug\netcoreapp1.1\DatabaseFirst17CRUD.AssemblyInfo.cs
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\bin\Debug\netcoreapp1.1\DatabaseFirst17CRUD.pdb
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\obj\Debug\netcoreapp1.1\DatabaseFirst17CRUD.dll
+E:\ASP\GitHub\User_MaxaunKD\ResponsiveAspNetCoreMVCBook\DatabaseFirst17CRUD\DatabaseFirst17CRUD\obj\Debug\netcoreapp1.1\DatabaseFirst17CRUD.pdb

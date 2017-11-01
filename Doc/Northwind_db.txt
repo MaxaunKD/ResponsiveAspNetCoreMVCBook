@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/sharparchitecture/Northwind/master/db/instnwnd.sql

@@ -1,0 +1,7 @@
+﻿Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 1.1.0
+
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 1.1.0
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design -Version 1.1.0
+
+Scaffold-DbContext "Data Source=LOCKERMX-PC\MSSQLSERVERS;Initial Catalog=Northwind;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -context NorthwindContext

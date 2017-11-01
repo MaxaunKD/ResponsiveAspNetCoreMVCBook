@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DatabaseFirst17CRUD.Models.Products>
+@{
+    ViewBag.Title = "ข้อมูลสินค้า";
+}
+
+<h3>ข้อมูลสินค้าจากตาราง Products</h3>
+
+<form asp.controller="Products" asp-action="SearchProducts" method="get">
+    @Html.TextBox("txtFilter") <input type="submit" value="ค้นหา" />
+</form><br />
+
+<p>
+    <a asp-controller="Products" asp-action="Create">เพิ่มสินค้า</a>
+</p>
+
+@*<p>
+    @using (Html.BeginForm("SearchProducts", "Products", FormMethod.Get))
+    { 
+        <div>
+            @Html.TextBox("txtFilter") <input type="submit" value="ค้นหา" />
+        </div>
+    }
+</p>*@
+
+<table class="table">
+    <tr>
+        <th>รหัสสินค้า</th>
+        <th>ชื่อสินค้า</th>
+        <th>ราคาสินค้า</th>
+        <th>ประเภท</th>
+        <th></th> @*Details*@
+        <th></th> @*Edit*@
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.UnitPrice</td>
+            <td>@item.Category.CategoryName</td>
+            <td><a asp-action="Details" asp-route-id="@item.ProductId">รายละเอียด</a></td>
+            <td><a asp-action="Edit" asp-route-id="@item.ProductId">แก้ไขข้อมูล</a></td>
+        </tr>
+    }
+</table>

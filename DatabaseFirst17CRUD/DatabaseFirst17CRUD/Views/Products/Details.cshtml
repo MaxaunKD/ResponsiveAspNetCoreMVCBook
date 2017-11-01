@@ -1,0 +1,12 @@
+﻿@model DatabaseFirst17CRUD.Models.Products
+
+@{
+    ViewBag.Title = "รายละเอียดสินค้า";
+}
+
+<label asp-for="ProductId">รหัสสินค้า : @Model.ProductId</label><br />
+<label asp-for="ProductName">ชื่อสินค้า : @Model.ProductName</label><br />
+<label asp-for="UnitPrice">ราคาสินค้า : @Model.UnitPrice</label><br />
+<label asp-for="Category.CategoryName">ประเภทสินค้า : @Model.Category.CategoryName</label><br />
+
+<a asp-controller="Products" asp-action="Index">กลับหน้าสินค้า</a>
