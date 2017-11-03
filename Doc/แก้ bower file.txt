@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/36578592/error-installing-bower-packages-in-visual-studio-2015-for-asp-net-core-project
+
+Install standalone Git from http://git-scm.com/
+Open bash and execute to use https instead on git (firewall maybe blocking git protocol) :
+
+git config --global url.https://github.com/.insteadOf git://github.com/
+Configure Visual studio to use this new git tool instead :
+
+enter image description here just add the last line and uncheck the old git command line.
+hope this helps
+
+tamhai install bootstap dai

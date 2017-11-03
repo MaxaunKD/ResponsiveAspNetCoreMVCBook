@@ -1,0 +1,2 @@
+UnobtrusiveValidationMode sub of master page 
+UnobtrusiveValidationMode="None"

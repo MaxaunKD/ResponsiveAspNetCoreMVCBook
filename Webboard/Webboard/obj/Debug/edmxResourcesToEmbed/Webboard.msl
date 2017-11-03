@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebboardModelStoreContainer" CdmEntityContainer="WebboardEntities">
+    <EntitySetMapping Name="Replies">
+      <EntityTypeMapping TypeName="WebboardModel.Reply">
+        <MappingFragment StoreEntitySet="Reply">
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="ReplyNO" ColumnName="ReplyNO" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReplyName" ColumnName="ReplyName" />
+          <ScalarProperty Name="ReplyDate" ColumnName="ReplyDate" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="WebboardModel.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="Topic1" ColumnName="Topic" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="ReplyCount" ColumnName="ReplyCount" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

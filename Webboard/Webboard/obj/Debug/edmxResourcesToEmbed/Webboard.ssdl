@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebboardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Reply">
+    <Key>
+      <PropertyRef Name="TID" />
+      <PropertyRef Name="ReplyNO" />
+    </Key>
+    <Property Name="TID" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="ReplyNO" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="ReplyName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ReplyDate" Type="datetime" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="TID" />
+    </Key>
+    <Property Name="TID" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="Topic" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="ViewCount" Type="int" />
+    <Property Name="ReplyCount" Type="int" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Reply_Topic">
+    <End Role="Topic" Type="Self.Topic" Multiplicity="1" />
+    <End Role="Reply" Type="Self.Reply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="TID" />
+      </Principal>
+      <Dependent Role="Reply">
+        <PropertyRef Name="TID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebboardModelStoreContainer">
+    <EntitySet Name="Reply" EntityType="Self.Reply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Topic" EntityType="Self.Topic" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Reply_Topic" Association="Self.FK_Reply_Topic">
+      <End Role="Topic" EntitySet="Topic" />
+      <End Role="Reply" EntitySet="Reply" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
